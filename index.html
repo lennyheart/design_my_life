@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IGLOO - Fill your space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #000;
+    }
+    header, footer {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 60px 40px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    .hero-images {
+      display:inline-block;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 8px;
+    }
+    .hero-images img {
+      width: 32%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .section {
+      padding: 60px 40px;
+    }
+    .products {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .products div {
+      flex: 1;
+      text-align: center;
+    }
+    .products img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .product-detail {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .product-detail img {
+      width: 70%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+    .product-listing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product-listing img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #f1460d;
+      color: white;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    footer h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+
+<!-- 여기서부터 바디바디바디바디바디바디바디바디바디바디바디바디바디바디바디바디바디바디 -->
+</head>
+<body>
+  <header>
+    <div><img src="images/레니-로고(퍼스널-브랜딩).png" alt="레니 Logo" style="height: 100px" /></div>
+    <nav>
+      <a href="#my recent">my recent</a>
+      <a href="#pastwork">pastwork</a>
+      <a href="#Notice">Notice</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 id="my recent">사용자경험과 비지니스를 같이 중시하는<br />디자이너 이은비입니다.</h1>
+    <div class="hero-images">
+      <img src="images/Frame 1707482083.png" alt="네이버 아이콘" />
+      <img src="images/Frame 1707482137.png" alt="아이폰 아이콘" />
+      <img src="images/인스타그램 앱 아이콘.png" alt="인스타그램 아이콘" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Everything you want for your space.</h2>
+    <div class="products">
+      <div>
+        <img src="shelf.jpg" alt="Monitor Shelf" />
+        <p>Monitor Shelf</p>
+      </div>
+      <div>
+        <img src="accessories.jpg" alt="Accessories" />
+        <p>Accessories</p>
+      </div>
+      <div>
+        <img src="organizer.jpg" alt="Organizer" />
+        <p>Organizer</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Imagine your own creative space.</h2>
+    <img src="studio.jpg" alt="Creative Desk" style="width: 100%; border-radius: 6px; margin-top: 20px;" />
+  </section>
+
+  <section class="section">
+    <h2 id="pastwork">Introducing the product that achieved Wadiz Best Funding.</h2>
+    <div class="gallery">
+      <img src="workspace1.jpg" alt="Workspace 1" />
+      <img src="workspace2.jpg" alt="Workspace 2" />
+      <img src="workspace3.jpg" alt="Workspace 3" />
+      <img src="workspace4.jpg" alt="Workspace 4" />
+    </div>
+  </section>
+
+  <section class="product-detail">
+    <img src="dualmonitor.jpg" alt="Dual Monitor Shelf" />
+    <h3>Dual Monitor Shelf<br />Fog White</h3>
+    <p><strong>32,900원</strong></p>
+  </section>
+
+  <section class="product-listing">
+    <img src="monitor1.jpg" alt="Monitor Shelf 1" />
+    <img src="monitor2.jpg" alt="Monitor Shelf 2" />
+    <img src="monitor3.jpg" alt="Monitor Shelf 3" />
+    <img src="monitor4.jpg" alt="Monitor Shelf 4" />
+  </section>
+
+  <section class="product-listing">
+    <img src="poster-white.jpg" alt="Poster White" />
+    <img src="poster-orange.jpg" alt="Poster Orange" />
+    <img src="poster-black.jpg" alt="Poster Black" />
+  </section>
+
+  <footer>
+    <h3 id="Notice">Fill your space with great Inspirations</h3>
+    <p>&copy; IGLOO Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
